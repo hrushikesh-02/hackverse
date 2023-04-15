@@ -1,5 +1,5 @@
 .navbar {
-  /* background-color: red; */
+  background-color: white;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -25,5 +25,3 @@
   color: rgb(47, 47, 47);
   padding: 0.5rem;
 }
-
-
