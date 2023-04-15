@@ -37,8 +37,8 @@ const Store = () => {
                 <Sketch data={{ nft: item.nft }} />
               </div>
               <div className={styles.iteminfo}>
-                <h3>Name : {item.user}</h3>
-                <h4 style={{ color: "blueviolet" }}> Price: {item.price} </h4>
+                <h3 className={styles.name}>Name: {item.user}</h3>
+                <h4 className={styles.price}>Price: {item.price} </h4>
               </div>
             </div>
           );

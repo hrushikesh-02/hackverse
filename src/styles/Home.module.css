@@ -27,7 +27,7 @@
 }
 
 .dividerTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .dividerContent {
@@ -58,6 +58,11 @@
   border-radius: 10px;
   border: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 100ms ease-in-out;
+}
+
+.generatorOptions button:active {
+  scale: 0.95;
 }
 
 .discardButton {

@@ -4,12 +4,15 @@ import styles from "../../styles/Profile.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Sketch from "@/components/sketch";
 
 const index = () => {
   useEffect(() => {
     AOS.init();
   }, []);
 
+  let arr = [100, 190, 50];
+  let blankArr = [1, 2, 3, 4, 5];
   return (
     <div>
       <main className={styles.main}>
@@ -28,23 +31,47 @@ const index = () => {
           <div className={styles.profileRight}>
             <div className={styles.title}>My Collection</div>
             <div className={styles.section}>
-              <div className={styles.sectionTitle} >Diamond</div>
+              <div className={styles.sectionTitle}>Diamond</div>
               <div className={styles.sectionContent}>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
+                {blankArr.map(() => {
+                  return (
+                    <div className={styles.sectionItem}>
+                      <Sketch data={{ nft: arr }} />
+                    </div>
+                  );
+                })}
               </div>
             </div>
             <div className={styles.section}>
               <div className={styles.sectionTitle}>Platinum</div>
               <div className={styles.sectionContent}>
-                <div className={styles.sectionItem}>item</div>
+                {blankArr.map(() => {
+                  return (
+                    <div className={styles.sectionItem}>
+                      <Sketch
+                        data={{
+                          nft: [
+                            arr[0] * Math.random(),
+                            arr[1] * Math.random(),
+                            arr[2] * Math.random(),
+                          ],
+                        }}
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </div>
             <div className={styles.section}>
               <div className={styles.sectionTitle}>Gold</div>
               <div className={styles.sectionContent}>
-                <div className={styles.sectionItem}>item</div>
+                {blankArr.map(() => {
+                  return (
+                    <div className={styles.sectionItem}>
+                      <Sketch data={{ nft: arr }} />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
