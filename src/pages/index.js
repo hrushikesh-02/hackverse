@@ -21,14 +21,21 @@ export default function Home() {
         <div className={styles.mainContent}>
           <div className={styles.generatorLeft}>
             <div className={styles.divider}>
-              <div className={styles.dividerTitle}>Title</div>
+              <div className={styles.dividerTitle}>Instructions on use</div>
               <div className={styles.dividerContent}>
-                <ul className={styles.stepsList}>
-                  <li className={styles.listItem}>step1:add rule here</li>
-                  <li className={styles.listItem}>step2:add rule here</li>
-                  <li className={styles.listItem}>step3:add rule here</li>
-                  <li className={styles.listItem}>step4:add rule here</li>
-                </ul>
+                <div className={styles.s}>sdsd</div>
+              </div>
+            </div>
+            <div className={styles.divider}>
+              <div className={styles.dividerTitle}>How it works</div>
+              <div className={styles.dividerContent}>
+                <div className={styles.s}>sdsd</div>
+              </div>
+            </div>
+            <div className={styles.divider}>
+              <div className={styles.dividerTitle}>Rarity levels</div>
+              <div className={styles.dividerContent}>
+                <div className={styles.s}>sdsd</div>
               </div>
             </div>
           </div>
