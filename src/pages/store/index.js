@@ -8,15 +8,14 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Store = () => {
-  const index = () => {
-    useEffect(() => {
-      AOS.init();
-    }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const handleFetchData = async () => {
     const response = await fetch("/api/store");
     const result = await response.json();
     setData(result.list);
-     console.log(result);
+    console.log(result);
   };
   useEffect(() => {
     handleFetchData();
@@ -36,7 +35,7 @@ const Store = () => {
                   src="https://news.artnet.com/app/news-upload/2021/02/NYAN-CAT-ARTINTERVIEW-copy.jpg"
                   className={styles.itemimage}
                 /> */}
-                <Sketch data={{nft:item.nft}}/>
+                <Sketch data={{ nft: item.nft }} />
               </div>
               <div className={styles.iteminfo}>
                 <h3>Name : {item.user}</h3>
