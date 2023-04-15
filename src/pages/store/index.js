@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "@/styles/Store.module.css";
-
+import Navbar from "@/components/Navbar";
 const Store = () => {
   const data = [
     {
       nft: "https://news.artnet.com/app/news-upload/2021/02/NYAN-CAT-ARTINTERVIEW-copy.jpg",
-      user: "",
+      user: "Shreyash",
       rarity: "",
       price: "120",
     },
@@ -75,20 +75,26 @@ const Store = () => {
       rarity: "",
       price: "120",
     },
-   
   ];
 
   return (
     <div className={styles.container}>
+      <Navbar />
+
       <div className={styles.gridlayout}>
         {data.map((item) => {
           return (
             <div className={styles.item} key={item.nft}>
               <div className={styles.itemdesc}>
-                <img src={item.nft} alt={item.nft} className={styles.itemimage}/>
-                <p>{item.user}</p>
+                <img
+                  src={item.nft}
+                  className={styles.itemimage}
+                />
               </div>
-              <h3> Price: {item.price}</h3>
+              <div className={styles.iteminfo}>
+                <h3>Name : {item.user}</h3>
+                <h4 style={{color:"blueviolet"}}> Price: {item.price}</h4>
+              </div>
             </div>
           );
         })}
