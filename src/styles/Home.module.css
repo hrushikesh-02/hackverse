@@ -34,6 +34,20 @@
   margin-top: 1rem;
 }
 
+.generateButton {
+  background-color: red;
+  padding: 1rem;
+  border-radius: 15px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 100ms ease-in-out;
+  background-color: #66a9f5;
+}
+
+.generateButton:active {
+  scale: 0.96;
+}
+
 .generatorRight {
   width: 60%;
   padding: 2rem;
@@ -100,8 +114,5 @@
   .generatorOptions {
     flex-direction: column;
     gap: 1rem;
-  }
-  .rhsGeneratorOptions {
-    flex-direction: column;
   }
 }
