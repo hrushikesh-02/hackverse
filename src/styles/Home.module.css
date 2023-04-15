@@ -13,7 +13,7 @@
 
 .generatorLeft {
   background-color: white;
-  width: 35%;
+  width: 35%; 
   padding: 1rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   clip-path: inset(0px -15px 0px 0px);

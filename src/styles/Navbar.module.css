@@ -21,8 +21,15 @@
 .navbarItem {
   text-decoration: none;
   color: rgb(47, 47, 47);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.navbarRight > .navbarItem:hover {
+  background-color: rgb(222, 222, 222);
+  transition: 0.5s ease-in-out;
 }

@@ -1,8 +1,15 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import styles from "../../styles/Profile.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const index = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <main className={styles.main}>
@@ -24,34 +31,17 @@ const index = () => {
               <div className={styles.sectionTitle}>Diamond</div>
               <div className={styles.sectionContent}>
                 <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
               </div>
             </div>
             <div className={styles.section}>
               <div className={styles.sectionTitle}>Platinum</div>
               <div className={styles.sectionContent}>
                 <div className={styles.sectionItem}>item</div>
-
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
               </div>
             </div>
             <div className={styles.section}>
               <div className={styles.sectionTitle}>Gold</div>
               <div className={styles.sectionContent}>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
                 <div className={styles.sectionItem}>item</div>
               </div>
             </div>
