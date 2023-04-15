@@ -19,9 +19,10 @@
 }
 
 .navbarItem {
-  /* background-color: blue; */
-  /* border-radius: 5px; */
   text-decoration: none;
   color: rgb(47, 47, 47);
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
