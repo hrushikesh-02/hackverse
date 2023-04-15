@@ -22,21 +22,15 @@ export default function Home() {
           <div className={styles.generatorLeft}>
             <div className={styles.divider}>
               <div className={styles.dividerTitle}>Instructions on use</div>
-              <div className={styles.dividerContent}>
-                <div className={styles.s}>sdsd</div>
-              </div>
+              <div className={styles.dividerContent}>content here</div>
             </div>
             <div className={styles.divider}>
               <div className={styles.dividerTitle}>How it works</div>
-              <div className={styles.dividerContent}>
-                <div className={styles.s}>sdsd</div>
-              </div>
+              <div className={styles.dividerContent}>content here</div>
             </div>
             <div className={styles.divider}>
               <div className={styles.dividerTitle}>Rarity levels</div>
-              <div className={styles.dividerContent}>
-                <div className={styles.s}>sdsd</div>
-              </div>
+              <div className={styles.dividerContent}>content here</div>
             </div>
           </div>
           <div className={styles.generatorRight}>

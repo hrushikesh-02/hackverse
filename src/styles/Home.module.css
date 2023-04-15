@@ -14,7 +14,7 @@
 .generatorLeft {
   background-color: white;
   width: 35%;
-  padding: 0.5rem;
+  padding: 0rem 0.5rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   clip-path: inset(0px -15px 0px 0px);
 }
@@ -22,7 +22,7 @@
 .divider {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.151);
 }
 
