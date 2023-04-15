@@ -2,12 +2,28 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Navbar from "../components/Navbar";
 import Sketch from "@/components/sketch";
+import { useState } from "react";
 
 let data = {
   nft: [190, 295, 100],
 };
+let arr = [100, 190, 50];
 
 export default function Home() {
+  const [randomArr, setRandomArr] = useState([
+    arr[0] * Math.random(),
+    arr[1] * Math.random(),
+    arr[2] * Math.random(),
+  ]);
+
+  const generatorFunction = () => {
+    setRandomArr([
+      arr[0] * Math.random(),
+      arr[1] * Math.random(),
+      arr[2] * Math.random(),
+    ]);
+  };
+
   return (
     <>
       <Head>
@@ -40,17 +56,30 @@ export default function Home() {
               Legendary:These NFTs are very hard to find and can go as high as $1 million
             </div>
             </div>
+            <div className={styles.divider}>
+              <button
+                onClick={generatorFunction}
+                className={styles.generateButton}
+              >
+                Generate
+              </button>
+            </div>
           </div>
           <div className={styles.generatorRight}>
             <div className={styles.generator}>
-              <Sketch data={data} />
+              <Sketch
+                data={{
+                  nft: [
+                    arr[0] * Math.random(),
+                    arr[1] * Math.random(),
+                    arr[2] * Math.random(),
+                  ],
+                }}
+              />
             </div>
             <div className={styles.generatorOptions}>
               <button className={styles.discardButton}>Discard</button>
-              <div className={styles.rhsGeneratorOptions}>
-                <button className={styles.storeButton}>store</button>
-                <button className={styles.collectButton}>store</button>
-              </div>
+              <button className={styles.storeButton}>Store</button>
             </div>
           </div>
         </div>
