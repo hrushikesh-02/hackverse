@@ -1,0 +1,39 @@
+
+.container {
+  background-color: rgba(128, 89, 89, 0.373);
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
+}
+.gridlayout {
+  margin-inline: 2rem;
+  margin-block: 2rem;
+  display: grid;
+  height: 200px;
+  grid-template-columns: 200px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 5rem;
+}
+.item{
+display: flex;
+flex-direction: column;
+justify-content: center;
+border: 1px solid black;
+text-align: center;
+}
+.itemdesc {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: rgb(77, 212, 214);
+  overflow: hidden;
+}
+.itemimage {
+  width: 100%;
+  height: 100%;
+}
