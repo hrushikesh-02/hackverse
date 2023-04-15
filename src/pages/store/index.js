@@ -75,7 +75,6 @@ const Store = () => {
       rarity: "",
       price: "120",
     },
-   
   ];
 
   return (
@@ -85,7 +84,11 @@ const Store = () => {
           return (
             <div className={styles.item} key={item.nft}>
               <div className={styles.itemdesc}>
-                <img src={item.nft} alt={item.nft} className={styles.itemimage}/>
+                <img
+                  src={item.nft}
+                  alt={item.nft}
+                  className={styles.itemimage}
+                />
                 <p>{item.user}</p>
               </div>
               <h3> Price: {item.price}</h3>
