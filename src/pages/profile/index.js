@@ -12,9 +12,11 @@ const index = () => {
             <div className={styles.profileImage}>
               <img></img>
             </div>
-            <div className={styles.name}>MYNAME.LASTNAME</div>
-            <div className={styles.name}>Account type:{12}</div>
-            <div className={styles.name}>Token count:{12}</div>
+            <div className={styles.name}>
+              {"Myname"} {"Lastname"}
+            </div>
+            <div className={styles.divider}>Account type:{"Premium"}</div>
+            <div className={styles.divider}>Token count:{12}</div>
           </div>
           <div className={styles.profileRight}>
             <div className={styles.title}>My Collection</div>
@@ -24,20 +26,13 @@ const index = () => {
                 <div className={styles.sectionItem}>item</div>
                 <div className={styles.sectionItem}>item</div>
                 <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>  
               </div>
             </div>
             <div className={styles.section}>
               <div className={styles.sectionTitle}>Platinum</div>
               <div className={styles.sectionContent}>
                 <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
-                <div className={styles.sectionItem}>item</div>
+
                 <div className={styles.sectionItem}>item</div>
                 <div className={styles.sectionItem}>item</div>
                 <div className={styles.sectionItem}>item</div>
