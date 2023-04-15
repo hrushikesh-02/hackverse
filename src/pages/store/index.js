@@ -1,96 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import styles from "@/styles/Store.module.css";
 import Navbar from "@/components/Navbar";
+import Sketch from "@/components/sketch";
 const Store = () => {
-  const data = [
-    {
-      nft: "https://news.artnet.com/app/news-upload/2021/02/NYAN-CAT-ARTINTERVIEW-copy.jpg",
-      user: "Shreyash",
-      rarity: "",
-      price: "120",
-    },
-    {
-      nft: "acbab",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "safcasdaf",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "fascsafa",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "fasfacssacascsaa",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "fasfaacs",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "fasfasacsac",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "fasfacassa",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "fasfacacs",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "fasfaacdac",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "ffa",
-      user: "",
-      rarity: "",
-      price: "",
-    },
-    {
-      nft: "",
-      user: "",
-      rarity: "",
-      price: "120",
-    },
-  ];
-
+  const handleFetchData = async () => {
+    const response = await fetch("/api/store");
+    const result = await response.json();
+    setData(result.list);
+     console.log(result);
+  };
+  useEffect(() => {
+    handleFetchData();
+  }, []);
+  const [data, setData] = useState([]);
+  //rarity : Common, Rare , Epic , Legendary
   return (
     <div className={styles.container}>
       <Navbar />
 
       <div className={styles.gridlayout}>
-        {data.map((item) => {
+        {data.map((item, ind) => {
           return (
-            <div className={styles.item} key={item.nft}>
+            <div className={styles.item} key={ind}>
               <div className={styles.itemdesc}>
-                <img src={item.nft} className={styles.itemimage} />
+                {/* <img
+                  src="https://news.artnet.com/app/news-upload/2021/02/NYAN-CAT-ARTINTERVIEW-copy.jpg"
+                  className={styles.itemimage}
+                /> */}
+                <Sketch data={{nft:item.nft}}/>
               </div>
               <div className={styles.iteminfo}>
                 <h3>Name : {item.user}</h3>
-                <h4 style={{ color: "blueviolet" }}> Price: {item.price}</h4>
+                <h4 style={{ color: "blueviolet" }}> Price: {item.price} </h4>
               </div>
             </div>
           );
