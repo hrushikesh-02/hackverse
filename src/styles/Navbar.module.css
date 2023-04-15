@@ -1,11 +1,16 @@
 .navbar {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   padding: 1rem;
 }
 
 .navbarLeft {
+  display: flex;
+  flex-grow: 1 0;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbarRight {
@@ -14,7 +19,9 @@
 }
 
 .navbarItem {
-  background-color: blue;
-  border-radius: 5px;
+  /* background-color: blue; */
+  /* border-radius: 5px; */
+  text-decoration: none;
+  color: rgb(47, 47, 47);
   padding: 0.5rem;
 }

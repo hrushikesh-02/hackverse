@@ -5,17 +5,19 @@ const navbar = () => {
     <div className={styles.navbar}>
       <div className={styles.navbarLeft}>
         <div className={styles.logo}></div>
-        <div className={styles.companyName}>NFT Platform</div>
+        <a href="/" className={styles.navbarItem}>
+          <div className={styles.companyName}>SPIRO</div>
+        </a>
       </div>
       <div className={styles.navbarRight}>
-        <a href="#" className={styles.navbarItem}>
+        <a href="/" className={styles.navbarItem}>
           Home
         </a>
-        <a href="#" className={styles.navbarItem}>
+        <a href="/store" className={styles.navbarItem}>
           Store
         </a>
-        <a href="#" className={styles.navbarItem}>
-          profile
+        <a href="/profile" className={styles.navbarItem}>
+          Profile
         </a>
       </div>
     </div>
