@@ -1,0 +1,20 @@
+.main {
+  background-color: blue;
+  height: 100vh;
+}
+
+.generator {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+}
+
+.generatorLeft {
+  width: 40%;
+  height: 100%;
+  background-color: red;
+}
+.generatorRight {
+  width: 55%;
+  background-color: red;
+}
