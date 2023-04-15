@@ -18,12 +18,27 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar />
         <div className={styles.mainContent}>
-          <div className={styles.generatorLeft}></div>
+          <div className={styles.generatorLeft}>
+            <div className={styles.divider}>
+              <div className={styles.dividerTitle}>Title</div>
+              <div className={styles.dividerContent}>
+                <ul className={styles.stepsList}>
+                  <li className={styles.listItem}>step1:add rule here</li>
+                  <li className={styles.listItem}>step2:add rule here</li>
+                  <li className={styles.listItem}>step3:add rule here</li>
+                  <li className={styles.listItem}>step4:add rule here</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div className={styles.generatorRight}>
             <div className={styles.generator}></div>
             <div className={styles.generatorOptions}>
               <button className={styles.discardButton}>Discard</button>
-              <button className={styles.storeButton}>store</button>
+              <div className={styles.rhsGeneratorOptions}>
+                <button className={styles.storeButton}>store</button>
+                <button className={styles.collectButton}>store</button>
+              </div>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@
 
 .mainContent {
   flex-grow: 1;
-  background-color: rgb(146, 214, 146);
+  background-color: #f1f3f4;
   display: flex;
   justify-content: space-between;
 }
@@ -15,6 +15,31 @@
   background-color: white;
   width: 35%;
   padding: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  clip-path: inset(0px -15px 0px 0px);
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.dividerTitle {
+  font-size: 1.5rem;
+}
+
+.dividerContent {
+  margin-top: 1rem;
+}
+
+.stepsList {
+  list-style-type: none;
+}
+
+.listItem {
+  background-color: red;
 }
 
 .generatorRight {
@@ -26,24 +51,36 @@
   border-radius: 10px;
   width: 100%;
   height: 80%;
-  border: 1px solid black;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .generatorOptions {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .generatorOptions button {
   padding: 1rem 3rem;
   border-radius: 10px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .discardButton {
-  background-color: red;
+  background-color: #d44d52;
+}
+
+.rhsGeneratorOptions {
+  display: flex;
+  gap: 1rem;
 }
 
 .storeButton {
-  background-color: rgb(107, 242, 107);
+  background-color: #a9d861;
+}
+
+.collectButton {
+  background-color: #66a9f5;
 }
