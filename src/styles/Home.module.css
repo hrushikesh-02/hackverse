@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  flex-grow: 1;
+  background-color: rgb(146, 214, 146);
+  display: flex;
+  justify-content: space-between;
+}
+
+.generatorLeft {
+  background-color: white;
+  width: 35%;
+  padding: 1rem;
+}
+
+.generatorRight {
+  width: 60%;
+  padding: 2rem;
+}
+
+.generator {
+  border-radius: 10px;
+  width: 100%;
+  height: 80%;
+  border: 1px solid black;
+}
+.generatorOptions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.generatorOptions button {
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
+
+.discardButton {
+  background-color: red;
+}
+
+.storeButton {
+  background-color: rgb(107, 242, 107);
+}
