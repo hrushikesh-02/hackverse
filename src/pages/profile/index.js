@@ -28,8 +28,10 @@ const index = () => {
           <div className={styles.profileRight}>
             <div className={styles.title}>My Collection</div>
             <div className={styles.section}>
-              <div className={styles.sectionTitle}>Diamond</div>
+              <div className={styles.sectionTitle} >Diamond</div>
               <div className={styles.sectionContent}>
+                <div className={styles.sectionItem}>item</div>
+                <div className={styles.sectionItem}>item</div>
                 <div className={styles.sectionItem}>item</div>
               </div>
             </div>

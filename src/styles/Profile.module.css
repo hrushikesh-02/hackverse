@@ -47,7 +47,8 @@
 }
 
 .sectionTitle {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 
@@ -68,4 +69,27 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   aspect-ratio: 1/1;
+}
+
+@media only screen and (max-width: 700px) {
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+  }
+
+  .sectionContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0rem;
+  }
+  .sectionItem {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .profileRight {
+    width: 90%;
+  }
 }

@@ -19,6 +19,12 @@
   gap: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .navbarRight {
+    gap: 0rem;
+  }
+}
+
 .navbarItem {
   text-decoration: none;
   color: rgb(47, 47, 47);
