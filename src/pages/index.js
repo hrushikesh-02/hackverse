@@ -22,15 +22,23 @@ export default function Home() {
           <div className={styles.generatorLeft}>
             <div className={styles.divider}>
               <div className={styles.dividerTitle}>Instructions on use</div>
-              <div className={styles.dividerContent}>content here</div>
+              <div className={styles.dividerContent}>Click on the generate button to generate a pattern that can further be
+              converted in to an NFT.User can check the rarity and estimated value on the community store</div>
             </div>
             <div className={styles.divider}>
-              <div className={styles.dividerTitle}>How it works</div>
-              <div className={styles.dividerContent}>content here</div>
+              <div className={styles.dividerTitle}></div>
+              <div className={styles.dividerContent}>The webiste will automatically generate a spiro pattern for you,the same can be discarded if the user needs a new pattern or owns the same</div>
             </div>
             <div className={styles.divider}>
               <div className={styles.dividerTitle}>Rarity levels</div>
-              <div className={styles.dividerContent}>content here</div>
+              <div className={styles.dividerContent}>There are 3 defined rarity levels:
+                <br></br>
+                Common:Nfts of this rarity are very easily available and can be bought for as low as 0.01$
+              <br />
+              Rare:Rare NFts are not easy to acquire and hold significant cost price.
+              <br />
+              Legendary:These NFTs are very hard to find and can go as high as $1 million
+            </div>
             </div>
           </div>
           <div className={styles.generatorRight}>
