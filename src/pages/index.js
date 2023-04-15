@@ -17,9 +17,15 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navbar />
-        <div className={styles.generator}>
-          <div className={styles.generatorLeft}>left</div>
-          <div className={styles.generatorRight}>hello</div>
+        <div className={styles.mainContent}>
+          <div className={styles.generatorLeft}></div>
+          <div className={styles.generatorRight}>
+            <div className={styles.generator}></div>
+            <div className={styles.generatorOptions}>
+              <button className={styles.discardButton}>Discard</button>
+              <button className={styles.storeButton}>store</button>
+            </div>
+          </div>
         </div>
       </main>
     </>
