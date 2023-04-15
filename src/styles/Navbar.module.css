@@ -1,0 +1,20 @@
+.navbar {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbarLeft {
+}
+
+.navbarRight {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbarItem {
+  background-color: blue;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
